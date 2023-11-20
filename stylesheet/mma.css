@@ -1,0 +1,10 @@
+div{
+    height: 500px;
+    width: 500px;
+    background-image: url('../image/ben4.jfif');
+    background-color: aqua;
+    border-radius: 50px;
+    background-repeat: no-repeat;
+    background-position: 40px 70px;
+    
+}

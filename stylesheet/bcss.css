@@ -1,0 +1,51 @@
+#first{
+    background-color: lightgrey;
+    width: 300px;
+    border: 15px solid green;
+   /* border-color: blueviolet;*/
+    padding: 50px;
+    margin:50px;
+  background-image:url('../image/groot2.jfif');
+  background-repeat: cover;
+    border-radius: 10%;
+    box-sizing:content-box;
+    align-self: start;
+   
+  }
+  p{
+     background-color: lightgrey;
+     width: 300px;
+     border: 15px solid green;
+     border-color: blueviolet;
+     padding: 50px;
+     margin:50px;
+   background-image:url('../image/groot2.jfif');
+   
+     border-radius: 10%;
+     box-sizing:content-box;
+     align-self: start; 
+  }
+  
+  #second{
+   border: 5px dashed red;
+   margin-bottom:200px;
+    padding-top: 30px;
+   background-color: aqua;
+   height: 100;
+   border-radius: 20%;
+   width: 200px;
+   font-weight:bolder;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  box-sizing: padding-box;
+  }
+  
+  #second:hover{
+       color: blue;
+  }
+  #first::selection{
+       color:brown;
+  }
+  #second::first-letter{
+       color: crimson;
+       font-size: xx-large;
+  }

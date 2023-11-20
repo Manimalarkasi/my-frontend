@@ -1,0 +1,50 @@
+.div-container {
+    margin: 0 5%;
+  }
+  
+  article {
+    display: inline-block;
+    color: darkgreen;
+  }
+  
+  .one-third {
+    margin-right: 3%;
+    width: 30%;
+  }
+  
+  .one-third:last-child {
+    margin-right: 50px;
+  }
+  
+  @media only screen and (max-width: 479px) {
+    article {
+      color: black;
+    }
+  
+    .one-third {
+      width: 97%;
+    }
+  }
+  
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+    article {
+      color: blue;
+      display: block;
+    }
+  
+    .one-third {
+      width: 95%;
+    }
+  }
+  
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
+    article {
+      color: darkred;
+    }
+  }
+  
+  @media only screen and (min-width: 1024px) {
+    article {
+      font-weight: bolder;
+    }
+  }

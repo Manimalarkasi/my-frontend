@@ -1,0 +1,79 @@
+.outerbox{
+    background-color: azure;
+    min-height: 500px;
+    display: flex;
+    flex-wrap: wrap;  /* go ot next line*/
+    justify-content: center;/*main axis*/
+    gap: 15px;
+    align-items: end;/*cross axis*/
+    flex-direction: column; 
+    /* row--> row-maon axis,column-cross axis
+    column --> column-,ain axis, row-cross axis*/
+g
+
+
+
+
+}
+.box{
+    width: 180px;
+    height : 180px;
+    background-color: blue;
+    flex-direction: row;
+    
+    border: 2px solid yellow;
+    
+}
+.box1{
+    /*flex:1 2 0px;*/
+    flex-shrink: 3;
+
+}/*flex grow rate , flex shrink rate
+ flex basis for width*/
+.box2{
+    flex:2 2 0px;
+}
+.box3{
+    flex:1 2 0px;
+}
+.box4{
+    flex:1 2 0px;
+}
+.box5{
+    flex:1 2 0px;
+}
+.container{
+    display:flex;
+    flex-direction: row;
+}
+p{
+    padding: 10px;
+}
+.para1{
+    background-color: bisque;
+    flex:1;/* width rasio*/
+    order:2;
+}
+.para2{
+    background-color: gray;
+    flex:1;
+    order:1;
+}
+.para3{
+    background-color:yellowgreen;
+    flex:1;
+    order:3;
+}
+.para4{
+    background-color: purple;
+    flex:1;
+    order:4;
+}
+
+
+
+
+
+
+
+

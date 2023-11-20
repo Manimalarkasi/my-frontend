@@ -1,0 +1,57 @@
+body{
+    
+    background:wheat url('../image/harry.jfif') no-repeat 40px 50px;
+}
+
+
+#then{
+    color: blue;
+    padding: 8px 22px;
+    border-radius: 6px;
+    background:yellowgreen;
+    
+   
+}
+#then:hover{
+    transition: all 0.2s linear;
+    transform: scale(1.3);
+}
+#do:hover{
+    background-color: darkslategray;
+    transition: all 2s linear;
+}
+#img{
+    font-size: 20px;
+    width: 50px;
+}
+#img:hover{
+    
+ background-color: chocolate;
+}
+.shap{
+    padding: 15px;
+    margin: 10px;
+    background-color: red;
+    background-image: url('../image/ben4.jfif');
+    position:absolute;
+    top:70%;
+    left: 10%;
+    
+}
+.shape:hover{
+    box-shadow: 2px 5px 15px 6px rebeccapurple;
+    color: aqua;
+
+}
+.mani{
+    background: yellowgreen;
+    padding: 15px;
+    border: 2px solid red ;
+    border-radius: 4px 15px 12px 19px;
+    box-shadow: 5px 6px 15px 10px mediumvioletred;
+    display: block;
+}
+img{
+    position:static;
+}
+

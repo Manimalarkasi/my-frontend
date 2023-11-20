@@ -1,0 +1,15 @@
+ h1{
+    background-color: aqua;
+
+}
+.bg{
+    padding: 15px;
+    background-color: burlywood;
+    border: 2px solid rgb(222, 135, 208);
+}
+
+div.container{
+    background-color: aqua;
+    border: 2px solid red;
+    text-align: center;
+}

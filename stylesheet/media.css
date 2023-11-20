@@ -1,0 +1,155 @@
+@media screen and (max-width: 700px) {  
+    
+    @import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+    :root{
+        --font:'Satisfy', cursive;
+    }
+    *{
+        margin: 0px;
+    }
+    body{
+        background-image: url('../image/ben4.jfif');
+        background-size:contain;
+        padding: 15px;
+        color: lawngreen;
+    }
+    h1{
+        font-size: xx-large;
+        font-family: var(--font);
+        color:darkorange;
+    }
+    a{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap-reverse;
+        gap: 15px;
+        text-decoration: none;
+    }
+    nav {
+        display: flex;
+        flex:3 ;
+        justify-content:right;
+        flex-wrap: wrap-reverse;
+        gap: 15px;
+    }
+    a:hover{
+        color: chartreuse;
+    }
+   .topnav{
+        display: flex;
+        flex:3 ;
+        justify-content:right;
+        flex-wrap: wrap-reverse;
+        gap: 15px;
+        text-decoration: none;
+    }
+    .header p{
+        color: deepskyblue;
+        text-align: center;
+    }
+    h2,h5{
+        font-family:cursive;
+        color: magenta;
+    }
+
+    
+}
+@media screen and (min-width:701px) and (max-width:2000px){
+    @import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@1,700&family=Noto+Color+Emoji&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+    
+    *{
+        margin: 10px;
+    }
+    body{
+        background-image: url('../image/groot1.jfif');
+        background-size:contain;
+        padding: 15px;
+        color: thistle;
+    }
+    h1{
+        font-size: xx-large;
+        font-family: 'Pacifico', serif;
+        color:darkorange;
+    }
+    h1::before{
+        font-family: 'Arvo', serif;
+        font-family: 'Noto Color Emoji', sans-serif;
+    }
+    nav a{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap-reverse;
+        gap: 15px;
+        text-decoration: none;
+    }
+    nav {
+        display: flex;
+        flex:3 ;
+        justify-content:right;
+        flex-wrap: wrap-reverse;
+        gap: 15px;
+    }
+    a:hover{
+        color:lightcyan;
+    }
+   .topnav{
+        display: flex;
+        flex:3 ;
+        justify-content:right;
+        flex-wrap: wrap-reverse;
+        gap: 15px;
+        text-decoration: none;
+    }
+    .header p{
+        color:yellowgreen;
+        text-align: center;
+    } 
+    h2,h3{
+        color: cornflowerblue;
+    } 
+    div{
+       display: flex;
+       display:inline-block;
+    }
+    .leftcolumn {   
+        float: left;
+        width: 50%;
+      }
+      
+      /* Right column */
+      .rightcolumn {
+        float: left;
+        width: 25%;
+        
+        padding-left: 20px;
+      }
+      
+      /* Fake image */
+      .fakeimg {
+        
+        width: 50%%;
+        padding: 20px;
+      }
+      .card {
+        float: right;
+        padding: 20px;
+        margin-top: 20px;
+        color: chartreuse;
+      }
+      
+      /* Clear floats after the columns */
+      .row::after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+      footer {
+        padding: 20px;
+        text-align: center;
+        background: #ddd;
+        justify-content: end;
+        margin-top: 20px;
+      }
+}
