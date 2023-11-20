@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Embedded Content Example</title>
+</head>
+<body>
+    <h1>Embedded Content Example</h1>
+    
+    <p>Click the button to load a different website in the iframe:</p>
+    
+    <input type="text" id="newUrl" placeholder="Enter a new URL">
+    <button onclick="loadNewContent()">Load New Content</button>
+
+    <iframe id="contentFrame" width="800" height="400" src="https://www.example.com" frameborder="0"></iframe>
+
+    <script>
+        function loadNewContent() {
+            const newUrl = document.getElementById("newUrl").value;
+            const iframe = document.getElementById("contentFrame");
+
+            if (newUrl) {
+                iframe.src = newUrl;
+            }
+        }
+    </script>
+</body>
+</html>

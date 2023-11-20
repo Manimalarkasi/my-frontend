@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Forms</title>
+    </head>
+    <body>
+<h1> form</h1>
+<form>
+First name:
+<input type="text" name="fname" value="" placeholder="fname"><br>
+<label for="lname">last name</label>
+<input type="text" name="lname" value="" placeholder="lname"><br>
+<label for="id" >emp ID</label> 
+<input type="text" name="emp ID" value="" placeholder="id"><br>
+<label for="password" >Password</label>
+<input type="password" name="password" placeholder="password" required><br>
+<label for="description">description</label>
+<textarea rows="5" cols="50" name="description">
+</textarea>
+<input type="mail" value="" name="email"><br>
+GENDER:<br>
+<input type="radio" name="gender" value="male">
+male<br>
+<input type="radio" name="gender" value="female">
+<label>female</label><br>
+<input type="radio" name="gender" value="transfer gender">
+<label>transfer gender</label><br>
+food :<br>
+<input type="checkbox" name="food" value="idly">
+<label> idly</label><br>
+<input type="checkbox" name="food" value="prota">
+<label> prota</label><br>
+<input type="checkbox" name="food" value="noodles">
+<label> noodles</label><br>
+<input type="checkbox" name="food" value="dosai">
+<label> dosai</label><br>
+<input type="month" id="bdaymonth" name="bdaymonth">
+  <input type="submit" value="Submit">
+food :<br>
+<select  name="dropdown" >
+    <option value="idly">idly</option>
+    <option value="dosai">dosai</option>
+    <option value="noodles">noodles</option>
+    <option value="parota" selected>parota</option>
+</select><br>
+FILE UPLOAD :<br>
+<input type="file" name="fileupload" 
+accept="C:\Users\SightSpectrum\Documents\.vscode">
+BUTTONS :<BR>
+<input type="submit" name="submit" value="submit" /><br>
+<input type="reset" name="reset" value="reset" /><br>
+<input type="button" name="ok" value="ok" /><br>
+<input type="image" name="imagebutton"
+ src="C:\Users\SightSpectrum\Pictures\Saved Pictures\groot2.jfif" />
+ <input type="hidden" name="check box" value="10"/>
+ <input type="button" onclick="alert('Hello World!')" value="Click Me!">
+</form>
+    </body>
+    
+</html>

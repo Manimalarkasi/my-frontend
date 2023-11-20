@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        h1{
+          width: max-content;
+          font-size: 2em;
+          position: relative;
+          cursor: pointer;
+          margin: 50px auto;
+
+        }
+        h1::after{
+            content: "";
+            position: absolute;
+            bottom: -5px;
+            left: 0px;
+            height: 4px;
+            width: 100px;
+            background-color: fuchsia;
+            transition: width 2s;
+            transition-timing-function: ease-in-out;
+             transform: scale(0);
+
+        }
+        h1:hover::after{
+            transform:scale(3,3);
+
+        }
+        .q{
+            height: 100px;
+            width: 200px;
+            background-color: blueviolet;
+            border: 2px solid greenyellow;
+            border-radius: 40px;
+            transition-duration: 1s;
+            transition-property: all;
+            transition-timing-function: linear;
+            
+        }
+        .q:hover{
+            /*transform-origin : 20% 30%;
+            transform : rotate(45deg);
+            transform : skew(45deg); 
+            transform: traslateX(500px);
+            transform: scale(2);*/
+            transform: traslateX(500px);
+        }
+        .a{
+            width: 200px;
+            height: 100px;
+            background-color: aqua;
+            transition-duration: 3s;
+            transition-property: all;/*<- only specify that style, all-default*/
+            transition-timing-function: linear;/*<-first slow then fast,ease-out-first fast the slow, ease-in-out-combain of 2,
+            linear-uniform speed
+            inspect la procee mathikalam */
+            transition-delay: 0s;/* dley aagum*/
+            /*transition: width 2s, height 2s, transform 2s;
+            width 2s perform aagum
+            heigt 2s perform aagum*/
+        }
+        .a:hover{
+            background-color: rgb(30, 255, 0);
+            width: 300px;
+            transform: rotate(360deg);
+            transform-origin: 20% 40%;
+            transform-style: preserve-3d;
+            /*rottatex(45deg) ,rottate(45deg),rottateg(45deg),
+            scale(2),scalex(2),scaley(2),traslate(20px),traslatex(20px),traslatey(20px),traslate(-20px)*/
+            /*transition: transision-propety duration delay timing-function transform; */
+        }
+        .d {
+  width: 100px;
+  height: 100px;
+  background: red;
+  transition: width 2s linear 1s;
+}
+
+.d:hover {
+  width: 300px;
+}
+        .b{
+            width: 100px;
+            height: 100px;
+            border-radius: 50px;
+            position: relative;
+
+            background-color: blueviolet;
+            animation-name: round;
+            animation-duration: 5s;
+            animation-fill-mode: forwards;
+            animation-iteration-count: infinite;  /*count no*/
+            animation-timing-function: ease;
+            animation-direction: reverse;
+            animation-delay: 0s;
+            /*animation: name duration timing-function delay iteration-count direction fill-mode;*/
+
+        }
+        @keyframes round{
+            0%{
+                background-color: chartreuse;
+               
+                left: 100px;
+                top: 100px;
+
+            }
+            100%{
+                background-color: brown;
+                width: 300px;
+                height: 300px;
+                left: 200px;
+                top:200px
+            }
+        }
+        .c{
+            width: 50px;
+            height: 50px;
+            background-color: darkgreen;
+            position: relative;
+            animation-name: box;
+            animation-duration: 6s;
+            animation-iteration-count: infinite;
+
+        }
+        @keyframes box{
+            0%{
+                background-color: darkgoldenrod;
+                top: 10px;
+               left: 10px;
+            }
+            25%{
+                background-color:darkred;
+                top: 10px;
+                left: 200px
+            }
+            50%{
+                background-color:deepskyblue;
+                bottom: 200px;
+               left: 200px
+            }
+            75%{
+                background-color:gold;
+                bottom: 200px;
+                left: 10px;
+            }
+            100%{
+                background-color:mediumvioletred;
+                bottom: 200px;
+                left: 200px;
+            }
+
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+    <h1>animation</h1>
+    <div class="q"></div><br>
+    <div class="a">hii</div>
+    <div class="b"><i class="fas fa-car"></i></div>
+    <div class="c"></div>
+    <div class="d"></div><br>
+    <div class="q"></div>
+</body>
+</html>
