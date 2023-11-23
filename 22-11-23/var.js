@@ -1,10 +1,16 @@
 console.log("variables");
 let aa=2
 aa=6 //change value
+let a1=aa.constructor
+console.log("aa constructor is :",a1 );
 var bb=4
 var bb=7 //it is redeclared
+let b1=aa.constructor
+console.log("bb constructor is :",b1 );
 var c=aa+bb
 let l=aa+bb
+let c1=aa.constructor
+console.log("c constructor is :",c1 );
 console.log("the addtion is : "+c);
 function add()
 {
@@ -38,7 +44,7 @@ let nam="malar";//string
 let nam1='mani';
 let isupper=false;//boolean
 let car=null;//null
-//car="red";
+car="red";
 let num=undefined;//undefined
 let xxxx=123e6//Exponential Notation
 let xx=123e-5
@@ -76,6 +82,9 @@ console.log(details.siblings);
 console.log(details.siblings.bro);
 //brocket notation
 console.log(details['age']);
+
+let date=new Date()
+console.log(date);
 let dd=new Object();
 dd.col="red";
 dd.col1="green";

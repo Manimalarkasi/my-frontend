@@ -2,8 +2,10 @@
 //let t = myFunction(4, 3);
 //document.getElementById("demo");
 
-function myFunction(a, b) {
-  return a * b;
+function mul(a, b) {
+    aa=a*b
+  document.write(aa);
+console.log(alert("the multiplication ia : ",aa))
 }
 mul(6,8)
 document.write("the multiplication is: ",mul(3,6),"<br>")
