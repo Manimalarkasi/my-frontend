@@ -8,7 +8,7 @@ function mul(a, b) {
 console.log(alert("the multiplication ia : ",aa))
 }
 mul(6,8)
-document.write("the multiplication is: ",mul(3,6),"<br>")
+document.write(alert("the multiplication is: ",mul(3,6),"<br>"))
 document.write("<hr>")
 
 
