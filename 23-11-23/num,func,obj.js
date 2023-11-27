@@ -247,7 +247,7 @@ detailss.no=function(){
 document.write(detailss.no())
 document.write("<hr>")
 document.write("***********************************************","<br>")
-document.write("bind()","<br>")
+document.write("bind()","<br>")//same as call,apply
 let dell={
     nom:"gowtham",
     agea:23,

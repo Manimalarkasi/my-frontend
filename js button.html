@@ -1,20 +1,30 @@
 <html>
 <head>
-<script type="text/javascript" src="javascript/button.js"> 
-// function sayHello() 
-// { 
-//  //document.write ("Hello there!");
-//  var tt=document.getElementById("bye")//
-// console.log(tt.textContent="hiii");
-// //tt.textContent="hii";
-// } 
+<script type="text/javascript" > 
+function sayHello() 
+{ 
+ //document.write ("Hello there!");
+ var tt=document.getElementById("bye")//
+console.log(tt.textContent="hiii");
+//tt.textContent="hii";
+} 
+var box=document.getElementById("inputbox")
+var result=document.getElementById("result")
+function update(){
+    result.textContent=inputbox.value;
+    
+}
 </script> 
 </head> 
 <body> 
 <p>Click the following button to call the function</p>
-<form> 
-<input type="button" onclick="sayHello()" value="Say Hello"> 
-</form>
 <p id="bye">Use different text in write method and then try...</p>
+<form> 
+<input type="button" onclick="sayHello()" value="Say Hello">
+<input id="inputbox">
+<button onclick="update()" >click</button>> 
+</form>
+<h2 id="result"></h2>
+
 </body>
 </html>

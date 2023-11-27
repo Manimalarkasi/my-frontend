@@ -3,12 +3,12 @@
 //document.getElementById("demo");
 
 function mul(a, b) {
-    aa=a*b
-  document.write(aa);
-console.log(alert("the multiplication ia : ",aa))
+    return a*b
+//   document.write(aa);
+// console.log("the multiplication ia : ",aa)
 }
 mul(6,8)
-document.write(alert("the multiplication is: ",mul(3,6),"<br>"))
+document.write("the multiplication is: ",mul(3,6),"<br>")
 document.write("<hr>")
 
 
@@ -75,10 +75,12 @@ function mine(){
     //document.write("name is "+typeof name +"<br>")
     document.write(typeof nane)
     document.write("age is "+typeof agee +"<br>" )
-    console.log("welcome to my world"+ nane +"hii");
-    alert("malar");
+    //console.log("welcome to my world"+ nane +"hii");
+    //alert("malar");
+    //return(alert("welcome to my world"+ nane +"hii"))
+    document.write(alert("welcome to my world"+ nane +"hii"))
 }
-mine()
+//mine()
 document.write("<hr>")
 
 
@@ -175,7 +177,7 @@ this.na=na,
         console.log(call4);
 
 
-let g=[7.8,8,6,4,3,"serial:{float:7.8}"]
+let g=[7.8,8,6,4,3,"serial={float:7.8}"]
 
 console.log(g.serial);
 

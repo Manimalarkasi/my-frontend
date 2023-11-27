@@ -109,6 +109,15 @@ console.log(colors.length)//(arrname.functions)
 
 console.log("********************************");
 console.log("string methods & search");
+console.log(`searchmethod
+            index
+            indexof
+            match
+            matchall
+            search
+            endswith
+            startswith
+            `);
 let str1="welcome to my world"
 let str2="my name is manimalar"
 let numb=77

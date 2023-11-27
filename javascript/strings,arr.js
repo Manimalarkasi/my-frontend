@@ -1,6 +1,12 @@
 let a="my name is mani"
 let b="my professional is web developer"
 let c=45
+console.log(`searchmethod
+            index
+            indexof
+            match
+            matchall
+            `);
 document.write(`the string a is:  ${a} `,"<br>")
 document.write(`the string b is:  ${b} `,"<br>")
 document.write(a.length,"<br>")
