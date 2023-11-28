@@ -153,6 +153,12 @@ let s6=student.filter((value,index,array)=>{
     return value.id<=11592
 })
 console.log(s6)
-
-
+// let arr=[222,668];
+//  function apply(a,b){
+//     return a+b;
+//  }
+// apply.function name(params) {
+    
+// }apply(arr);
+// document.write()
 
