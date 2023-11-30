@@ -1,7 +1,7 @@
 
 //if statement
-var a = 20; 
-if( a > 18 ){ 
+var v = 20; 
+if( v> 18 ){ 
 document.write("Qualifies for driving","<br>",);
  } 
  document.write("<hr>")
@@ -83,6 +83,10 @@ while(s<=16)
 document.write("<hr>")
 //for
 for(i=0;i<=20;i++){
+    document.write(i +"*"+t+"="+i*t,"<br>")
+}
+document.write("<hr>")
+for(i=0;i<=20;i++){
     if(i%2!==0){
 
         document.write("odd no " +i,"<br>")
@@ -90,4 +94,59 @@ for(i=0;i<=20;i++){
 }
 document.write("<hr>")
 
+// document.write("break,continue","<br>")
+// var x = 1;
+//  document.write("Entering the loop");
+//  while (x < 20) {
+ 
+//  if (x == 10){
+//     continue; // breaks out of loop completely
+//     }
+//     /* if (x ==15 ){
+//         break; // breaks out of loop completely
+//         } */
+//  x = x + 1;
+//  document.write( x + " ");
+//  } 
+// document.write("Exiting the loop!","<br>");
+// document.write("<hr>")
+
+
+document.write("nested loop")
+for (var i = 0; i < 5; i++) { 
+    document.write( 
+      "the number is : " + i + "<br />"); 
+    document.write("<br />") 
+
+    for (var j = 0; j < 5; j++) { 
+        // Break from the inner loop 
+        if (j == 3) break;  
+
+        document.write( 
+          "the time is  : " + j + " <br />"); 
+    } 
+   // Break from the outer loop 
+    if (i == 3) break; 
+} 
+
+let a=1
+let b=1
+while(a<=10){
+    document.write(a+"*"+1+"="+a*1,"<br>" )
+    while(b<=10){
+        document.write(a+"*"+b+"="+a*b,"<br>")
+        b++
+        
+    }
+    
+    a++
+    
+} 
+document.write("<hr>")
+for(a=1;a<=10;a++){
+    for(b=1;b<=10;b++){
+        document.write(a+"*"+b+"="+a*b,"<br>" )
+    }
+    document.write(a+"*"+b+"="+a*b,"<br>" )
+}
 
