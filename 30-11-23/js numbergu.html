@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Number Guessing Game</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Number Guessing Game</h1>
+  <p>I have selected a number between 1 and 100. Try to guess it.</p>
+temprature:
+<input type="text" name="temprature" id="heat" value=" "><br>
+value:
+<select id="type">
+  <option value="celsius">celsius</option>
+  <option value="fehrenheit">fehrenheit</option>
+</select><br>
+<button id="result" type="button" value="convert" onclick="convert()">convert</button><br>
+<p id="result"></p>
+  <script>
+       // Function to start the game
+    function startGame() {
+      // Generate a random number between 1 and 100
+      const secretNumber = Math.floor(Math.random() * 100) + 1;
+      let attempts = 0;
+
+      while (true) {
+        // Get the player's guess
+        const guess = parseInt(prompt("Enter your guess (between 1 and 100):"));
+
+        // Check if the guess is correct
+        if (isNaN(guess)) {
+          alert("Invalid input. Please enter a valid number.");
+        } else {
+          attempts++;
+
+          if (guess === secretNumber) {
+            alert(`Congratulations! You guessed the correct number in ${attempts} attempts.`);
+            break;
+          } else if (guess < secretNumber) {
+            alert("Too low. Try again.");
+          } else {
+            alert("Too high. Try again.");
+          }
+        }
+      }
+    }
+
+    // Call the startGame function when the page loads
+    startGame();
+    function convert(){
+    let temp=document.getElementById("heat").value;
+    let unit=document.getElementById("type").value;
+    let result;
+    if (unit === "celsius") {
+      result = (temp * 9/5) + 32;
+    } else {
+      result = (temp - 32) * 5/9;
+    }
+
+    // Display the result
+    document.getElementById("result").innerHTML = `Result: ${result.toFixed(2)}° ${unit === "celsius" ? "Fahrenheit" : "Celsius"}`;
+  
+  }
+
+
+
+
+
+
+
+
+  </script>
+
+</body>
+</html>

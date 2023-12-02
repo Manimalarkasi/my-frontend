@@ -33,6 +33,14 @@ function none(nom,age){//parameter
 document.write(none("mani",20));//arguments
 document.write(none("pani",22))
 
+document.write("arow function")
+let fun= (nom,age)=>{//parameter
+    return("my name is, " + nom +"malar. my age is "+age);
+    }
+// document.write(none("mani",20));//arguments
+// document.write(none("pani",22))
+document.write(fun("mani",20))
+document.write(fun("pani",22))
 document.write("<hr>")
 function mol(n1,n2){
     r=n1%n2;
@@ -57,4 +65,22 @@ var func=function func1(title,author){
 document.write(func())//function la parameter value kudutha this key word theva illa
 //but parameter value func la kodukkalana this key word kodukkanum
 var func2=func()
- document.write(func2)
+ document.write(func)
+
+ const foo = function* () {
+    yield 'a';
+    yield 'b';
+    yield 'c';
+  };
+  
+  let str = '';
+  for (const val of foo()) {
+    str = str + val;
+  }
+  
+  console.log(str);
+  // Expected output: "abc"
+
+
+
+
