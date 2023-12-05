@@ -61,7 +61,8 @@ document.write("Using Object.values()","<br>")
 document.write(Object.values(details))//values(o: { [s: string]: string | number | { bro: string; sis: string; }; } | ArrayLike<string | number | { bro: string; sis: string; }>): (string | number | { bro: string; sis: string; })[]
 document.write("<hr>")
 document.write("Using JSON.stringify()","<br>")
-document.write(JSON.stringify(details))
+document.write(JSON.stringify(details))//stringify(value: any, replacer?: ((this: any, key: string, value: any) => any) | undefined, space?: string | number | undefined): string
+
 document.write("<hr>")
 //obj method
 document.write("Defining Methods for an Object","<br>")
@@ -88,7 +89,7 @@ document.write("<hr>")
 document.write("Adding a Method to an Object ,","<br>")
 document.write("Using Built-In Methods .","<br>")
 detailss.no=function(){
-    return ("my age is "+ this.agea).toUpperCase();
+    return ("my age is "+ this.agea).toUpperCase();//additiona metod use panna return the use pannanum
 }
 document.write(detailss.no())
 document.write("<hr>")

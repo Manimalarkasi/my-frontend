@@ -435,5 +435,52 @@ let reduce=colors.reduce((previousValue, currentValue, currentIndex, array)=>
 {
     return previousValue+currentValue
 })
-console.log(reduce);
 
+console.log(student);
+console.log(student[2]);
+student.entries();
+student.every((value,ind,arr)=>{
+    console.log(value,ind,arr);
+})
+
+let n=student.filter((val,ind,arr)=>{
+    return(val.id==11593);
+})
+console.log(n);
+
+let n1=student.find((val,ind,arr)=>{
+    return val.age==22
+})
+console.log(n1);
+
+let n2=student.findIndex((val,ind,arr)=>{
+    return val.name=="mani"
+})
+console.log(n2);
+
+let n3=student.forEach((val,ind,arr)=>{
+    console.log(ind,val,arr);
+})
+
+let n4=student.includes((val)=>{
+    return val.id==11593
+})
+console.log(n4);
+
+let n5=student.reverse()
+console.log(n5);
+
+let n6=student.values()
+console.log(n6);
+
+
+console.log(reduce);
+arr=['eee','cse','it','ece']
+arr.forEach(val=>{
+    const opt=document.createElement('option')
+    opt.textContent=val
+    opt.value=val
+    document.getElementById('branch').appendChild(val)
+})
+/* <select id="barnch" >
+    <option value:select>select</option> */

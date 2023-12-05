@@ -151,7 +151,7 @@ function Call(na,year,proof,no){
 let call= new Call("malar",20,"aadhar",9999999)
 call.fill()
 let call2= new Call("mani",20,"pan","trtr345")
-call2.fill()
+call2.fill()    
 
 
 //default constructors:
