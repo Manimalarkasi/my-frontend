@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container {
+  width: 400px;
+  height: 400px;
+  position: relative;
+  background: yellow;
+}
+#animate {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  background-color: red;
+}
+.round{
+    height: 200px;
+    width: 150px;
+    background-image: url("./image/ben2.jfif");
+    background-color: #1212cc;
+    border: 3px solid red;
+    animation: circle 5s ease 3s infinite reverse forwards;
+    /* : 3s circle 0s forwards forwards ease infinite;  */
+    position: relative;
+}
+@keyframes circle {
+    0%{
+        left:0px;
+        top: 0px;
+    }
+    20%{
+        background-color: #1212cc;
+        left: 200px;
+        top: 0px;
+    }
+    40%{
+        background-color: aqua;
+        left: 200px;
+        top: 50px;
+
+    }
+    60%{
+        background-color: blueviolet;
+        left:10px;
+        top:50px;
+
+    }
+    80%{
+        background-color: brown;
+        left: 10px;
+        bottom: 80px;
+    }
+    100%{
+        background-color: chartreuse;
+        left: 5px;
+        top: 5px;
+    }
+
+    
+}
+    </style>
+</head>
+<body>
+
+    <p><button onclick="myMove()">Click Me</button></p> 
+
+<div id ="container">
+  <div id ="animate"></div>
+</div>
+<div class="round"></div>
+    <script src="animation.js"></script>
+</body>
+</html>

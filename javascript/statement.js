@@ -1,11 +1,13 @@
 
-//if statement
+document.write("if statement")
 var v = 20; 
 if( v> 18 ){ 
 document.write("Qualifies for driving","<br>",);
  } 
  document.write("<hr>")
- //if else statement
+
+
+ document.write("if else statement")
  var age = 15;
  if( age > 18 ){
  document.write("your eligible for vote","<br>",);
@@ -14,7 +16,9 @@ else{
  document.write("your eligible not for vote","<br>",);
  }
  document.write("<hr>")
-//else if
+
+
+document.write("else if")
 let u
 let y
 function statement1(u,y){
@@ -33,8 +37,7 @@ else{
 console.log(statement1(200,50));
 document.write("<hr>")
 
-//switch
-
+document.write("switch")
 function statement2(){
 let bg="o-";
 switch(bg){
@@ -58,10 +61,11 @@ switch(bg){
         break;
 }}
 console.log(statement2());
+document.write(statement2());
 document.write("<hr>")
 
 
-//while
+document.write("while")
 var i=1;
 while(i<20){
     if(i %2 == 0){
@@ -71,7 +75,7 @@ while(i<20){
 }
 document.write("<hr>")
 
-//do while
+document.write("do while")
 
 let s=1
 let t=9
@@ -81,11 +85,15 @@ do{
 }
 while(s<=16)
 document.write("<hr>")
-//for
+
+
+document.write("for")
 for(i=0;i<=20;i++){
     document.write(i +"*"+t+"="+i*t,"<br>")
 }
 document.write("<hr>")
+
+
 for(i=0;i<=20;i++){
     if(i%2!==0){
 
@@ -143,10 +151,30 @@ while(a<=10){
     
 } 
 document.write("<hr>")
-for(a=1;a<=10;a++){
-    for(b=1;b<=10;b++){
+for(let a=1;a<=16;a++){
+    for(let b=1;b<=16;b++){
         document.write(a+"*"+b+"="+a*b,"<br>" )
     }
     document.write(a+"*"+b+"="+a*b,"<br>" )
+    document.write("<br>")
 }
 
+document.write("<hr>")
+let m,n
+for(let m=1;m<16;m++){
+    for(let n=1;n<16;n++){
+        document.write(m+"*"+n+"="+m*n,"<br>" )
+    }
+    document.write(n+"*"+m+"="+m*n,"<br>" )
+    document.write("<br>")
+}
+
+
+document.write("<hr>")
+for(let i=1;i<=15;i++){
+    for(j=1;j<=15;j++){
+        document.write(i+"*"+j+"="+i*j,"<br>")
+    }
+    document.write(i+"*"+j+"="+i*j,"<br>")
+    document.write("<br>")
+}

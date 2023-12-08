@@ -4,13 +4,15 @@ console.log("creat array");
 let colors=[45,56,67,78]
 colors[5]=79;
 console.log(colors);
-document.write(color)
+document.write(colors)
 console.log(colors[2]);
 console.log(colors[1]);
 console.log(colors[3]);
 colors[2]=70;
 console.log(colors[2]);
 
+console.log(colors.length)
+//delete.colors[2]
 console.log(colors.length)
 m73=function myFunction() {
     for (let i = colors.length -1; i > 0; i--) {
@@ -267,10 +269,10 @@ console.log(`array itration
 
 
 
-let colors=[45,56,67,78]
-colors[5]=79;
-console.log(colors);
-document.write(colors)
+// let colors=[45,56,67,78]
+// colors[5]=79;
+// console.log(colors);
+// document.write(colors)
 
 
 console.log("loop through an array");
@@ -315,13 +317,13 @@ let num=[4,5,7,8,99,5,33]
 
 
 
-let numbers=new Array()//Array(arrayLength?: number | undefined): any[]
-numbers[0]="one"
-numbers[1]="two"
-numbers[2]="three"
-numbers[3]="four"
-numbers[4]="five"
-numbers[5]="six"
+// let numbers=new Array()//Array(arrayLength?: number | undefined): any[]
+// numbers[0]="one"
+// numbers[1]="two"
+// numbers[2]="three"
+// numbers[3]="four"
+// numbers[4]="five"
+// numbers[5]="six"
 
 
 
@@ -434,7 +436,7 @@ console.log("reduce()");
 let reduce=colors.reduce((previousValue, currentValue, currentIndex, array)=>
 {
     return previousValue+currentValue
-})
+},0)
 
 console.log(student);
 console.log(student[2]);
@@ -482,5 +484,3 @@ arr.forEach(val=>{
     opt.value=val
     document.getElementById('branch').appendChild(val)
 })
-/* <select id="barnch" >
-    <option value:select>select</option> */
