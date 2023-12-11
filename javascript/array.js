@@ -36,7 +36,7 @@ function book(title, author){
    document.write("Book title is : " + myBook.title + "<br>");
    document.write("Book author is : " + myBook.author + "<br>");
    document.write("Book price is : " + myBook.price + "<br>");
-     
+     console.log(myBook);
 console.log("constructor array");
 let numbers=new Array()//Array(arrayLength?: number | undefined): any[]
 numbers[0]="one"
@@ -46,12 +46,13 @@ numbers[3]="four"
 numbers[4]="five"
 numbers[5]="six"
 function isBigEnough(element, index, array) {
-    return (element >= 10);
+    return (element >= 3);
    }
+   console.log(isBigEnough());
    console.log("sort");
    let m7=numbers.sort()//ort(compareFn?: ((a: any, b: any) => number) | undefined): any[]
 console.log(m7);
-let m71=numbers.sort(function(a, b){return a - b});//Numerically
+let m71=numbers.sort(function(a, b){return b-a});//Numerically
 console.log(m71);
 
 console.log("reverse");
@@ -75,7 +76,7 @@ m1=numbers.join("-")
 console.log(m1);
 
 console.log("copywith");
-console.log(numbers.copyWithin(4,1,5))//copyWithin(target: number, start: number, end?: number | undefined): any[]
+console.log(numbers.copyWithin(4,1))//copyWithin(target: number, start: number, end?: number | undefined): any[]
 
 console.log("entairs");
 console.log(numbers.entries());//entries(): IterableIterator<[number, any]>
@@ -85,7 +86,7 @@ console.log(numbers.entries());//entries(): IterableIterator<[number, any]>
 //console.log(numbers.find("one"));//find(predicate: (value: any, index: number, obj: any[]) => value is any, thisArg?: any): any
 //console.log(numbers.findIndex());//findIndex(predicate: (value: any, index: number, obj: any[]) => unknown, thisArg?: any): number
 
-console.log("slice it creat nee arr specify start to end ele index");//exract method
+console.log("slice it creat new arr specify start to end ele index");//exract method
 m12=numbers.slice(2,6)//slice(start?: number | undefined, end?: number | undefined): any[]
 console.log(m12);
 
@@ -297,22 +298,23 @@ console.log("for");
 let num=[4,5,7,8,99,5,33]
       let fru1=num.map(myfru)
       function myfru(value,index,array){
-        return value*2
+        return index,value*2
 
       }
       console.log(fru1);
 
       let fru=fruits.map(myfruit)
       function myfruit(value,index,array){
-        return value,index
-
+        return index,value
       }
       console.log(fru);
 
       const myArr = [1, 2, 3, 4, 5,6];
       const newArr = myArr.flatMap((x) => x * 2);
-
-
+console.log(newArr);
+myArr.flatMap((x,i)=>{
+console.log(i,x);
+})
 
 
 
@@ -388,17 +390,17 @@ student.every((value,index,array)=>{
 })//predicate(value: { id: number; name: string; }, index: number, array: { id: number; name: string; }[]): value is { id: number; name: string; }
 
 let s4=student.every((value,index,array)=>{
-    return value.id>=5
+    return value.id<=5
 })
 console.log(s4);//every value is satisfy the logic it return true
-
+//student.every()
 let s5=student.some((value,index,array)=>{
     return value.id>=2
 })
 console.log(s5);//any one or 2 values statify the logic it return true
 
 let s6=student.filter((value,index,array)=>{
-    return value.id<=11592
+    return value.id>=11592
 })
 console.log(s6)
 // let arr=[222,668];
@@ -409,18 +411,19 @@ console.log(s6)
     
 // }apply(arr);
 // document.write()
+let color=[2,4,6,8,0,7,55,4]
 let index=0
-let map=colors.map((value,index,array)=>{
+let map=color.map((value,index,array)=>{
     
-while(index<colors.length)
-{
-    console.log(value%2==0);
-    index++
-}
-console.log(index,value,array);
+// while(index<colors.length)
+// {
+//     console.log(value%2==0);
+//     index++
+// }
+console.log(index,value%2==0,array);
 })
 
-let map1=colors.map((value,index,array)=>{
+let map1=color.map((value,index,array)=>{
     console.log(index,value,array);
     })
     console.log(map1);
@@ -433,16 +436,16 @@ let filter=colors.filter((value, index, array)=>{
 console.log(filter);
 
 console.log("reduce()");
-let reduce=colors.reduce((previousValue, currentValue, currentIndex, array)=>
+let reduce=color.reduce((previousValue, currentValue, currentIndex, array)=>
 {
     return previousValue+currentValue
 },0)
-
+console.log(reduce);
 console.log(student);
 console.log(student[2]);
 student.entries();
 student.every((value,ind,arr)=>{
-    console.log(value,ind,arr);
+    console.log(ind,value,arr);
 })
 
 let n=student.filter((val,ind,arr)=>{

@@ -37,7 +37,7 @@ console.log(str1.replace("world","home"));//replace(searchValue: { [Symbol.repla
 console.log(str1.search("my"));//method) String.search(regexp: string | RegExp): number (+1 overload)
 //console.log(str1.splice(3,5,"ee"));//Array.splice(start: number, deleteCount?: number | undefined): T[]
 console.log(str1.slice(4,12));//lice(start?: number | undefined, end?: number | undefined): string
-console.log(str1.split(""));//split(splitter: { [Symbol.split](string: string, limit?: number | undefined): string[]; }, limit?: number | undefined): string[]
+console.log(str1.split(" "));//split(splitter: { [Symbol.split](string: string, limit?: number | undefined): string[]; }, limit?: number | undefined): string[]
 console.log(str1.substring(3,19));//substring(start: number, end?: number | undefined): string
 console.log(str1.toLocaleLowerCase());//toLocaleLowerCase(locales?: string | string[] | undefined): string
 console.log(str1.toLocaleUpperCase());//toLocaleUpperCase(locales?: string | string[] | undefined): string

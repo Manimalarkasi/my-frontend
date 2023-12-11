@@ -44,8 +44,8 @@ function fillgas(){
 function rapair(){
     console.log("repairing");
 }
-export default Car
-export {fillgas,rapair}
+// export default Car
+// export {fillgas,rapair}
 
 
 

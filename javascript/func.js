@@ -177,7 +177,7 @@ this.na=na,
         console.log(call4);
 
 
-let g=[7.8,8,6,4,3,"serial={float:7.8}"]
+let g=[7.8,8,6,4,3,{float:7.8}]
 
 console.log(g.serial);
 
