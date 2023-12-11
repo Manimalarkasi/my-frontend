@@ -32,8 +32,8 @@ let c=new Child("malar")
 console.log(c.surname);
 c.chilmeth()
 c.parmeth()
-console.log("class-> vlass is a template of properties and methods");
-console.log("static-> common variables& methods for class accessed with classname");
+console.log("class-> class is a template of properties and methods");
+console.log("static-> common variables & methods for class accessed with classname");
 console.log("inheritance->aquiring properties of a base class");
 class Math{
     static totimes=0
