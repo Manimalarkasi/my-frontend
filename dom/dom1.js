@@ -1,10 +1,12 @@
 //document.getElementById("doc")=document.write(document)
 myDoc=document
 var myDoc
-//html code vanum na log ,otherwise method & property venum na dir (directory)
+document.write("html code vanum na log ,otherwise method & property venum na dir (directory)","<br>")
 console.log(myDoc);
 console.log(myDoc.body);
 console.dir(myDoc.body);
+console.log(myDoc.head);
+console.dir(myDoc.head);
 console.dir(myDoc.body.childNodes);
 console.dir(myDoc.body.children);
 console.log(myDoc.body.childNodes);
@@ -24,6 +26,7 @@ let man={
 return `hii! my name is ${this.na}. my age is ${this.age} i'm live in ${this.place}`
     }
 }
+document.writeln(man.full())
 document.getElementById("full").innerHTML=man.full()
 
 man.na="malar"
@@ -34,6 +37,9 @@ console.log(naa);
 //print to document
 //document.body.innerHTML=`<h1>${naa}</h1>`;
 
+console.log("html reference");
+console.log(document.documentElement);
+console.log(document.documentElement.id);
 
 
 

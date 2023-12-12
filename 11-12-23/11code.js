@@ -19,7 +19,7 @@ let man={
        return ` hii!, my name is ${this.na}.my employee ID is ${this.emp_ID}. my mail ID is ${this.mail}. i'm live in ${this.place}` 
     }
 };
-console.log(man.details());
+console.table(man.details());
 document.writeln(man.details(),"<br>");
 }
 
@@ -31,26 +31,29 @@ personal.appa=prompt("enter your father name:")
 personal.amma=prompt("enter your mother name:")
 personal.phone=prompt("enter your mobile no:")
 personal.native=prompt("enter your native place:")
+console.table([personal.naa , personal.id , personal.amma , personal.appa , personal.phone , personal.native]);
 console.log(personal.naa);
 console.log(personal.id);
 console.log(personal.amma);
 console.log(personal.appa);
 console.log(personal.phone);
 console.log(personal.native);
+console.table([2,3,4,5,6,7,8,3,1])
 personal.soul=function(){
     return `hii!, my name is ${this.naa}.my employee ID is ${this.id}. my appa name is ${this.appa}. my amma name is ${this.amma}.my phone no is ${this.phone}.my native place is ${this.native}`
 };
 console.log(personal.soul());
 document.write(personal.soul(),"<br>")
+return this
 }
 
 
-let i=0;    
-while(i<1){
-    document.writeln(employee());
-document.writeln(per());
-    i++;
-}
+// let i=0;    
+// while(i<1){
+//     document.writeln(employee());
+// document.writeln(per());
+//     i++;
+// }
 
 
 
@@ -174,6 +177,83 @@ function arg1(val,name){
     console.log(val.c);
     console.log(name);
 }
+
+class Square{
+    constructor(a,b,c){
+        this.a=a;
+        this.b=b;
+        this.c=c;
+    }
+    area(){
+        console.log("the area of square is:" ,this.a**2);
+        return this
+    }
+    perimeter(){
+        console.log("the perimeter of square is :",4*this.a);
+        return this
+    }
+}
+class Rectangle extends Square{
+    constructor(a,b,c){
+        super(a,b,c)
+        
+    }
+    area1(){
+        console.log("the area of rectangle is:" ,this.a*this.b);
+        return this
+    }
+    perimeter1(){
+        console.log("the perimeter of rectangle is :",2*(this.a+this.b));
+        return this
+    }
+}
+let sqr=new Square(2)
+console.log(sqr.area());
+let rect=new Rectangle(2,3,4)
+console.log(rect.area());
+class Triangle extends Rectangle{
+    constructor(a,b,c){
+        super(a,b,c)
+        
+    }
+    area2(){
+        console.log("the area of triangle is:" , 1/2*(this.b * this.c));
+        return this
+    }
+    perimeter2(){
+        console.log("the perimeter of triangle is :",this.a+this.b+this.c);
+        return this
+    }
+}
+class Circle extends Triangle{
+    constructor(a,b,c){
+        super(a,b,c)
+        this.pi=3.14
+    }
+    area3(){
+        console.log("the area of circle is:" , this.pi*this.a**2);
+        return this
+    }
+    perimeter3(){
+        console.log("the perimeter of circle is :",2*this.pi*this.a);
+        return this
+    }
+}
+let area=new Circle(2,3,4)
+area.area().area1().area2().area3()
+//console.log(area.area().area1().area2().area3());
+let perimeter=new Circle(2,3,4)
+perimeter.perimeter().perimeter1().perimeter2().perimeter3()
+
+
+
+
+
+
+
+
+
+
 
 console.log("get & set");
 class Temperature{
