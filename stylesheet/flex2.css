@@ -6,11 +6,11 @@
     justify-content: center;/*main axis*/
     gap: 15px;
     align-items: end;/*cross axis*/
-    flex-direction: column; 
+    /* flex-direction: column;  */
     /* row--> row-maon axis,column-cross axis
     column --> column-,ain axis, row-cross axis*/
-g
-
+/* flex: 1 1 auto; <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> */
+/* flex-direction: ,flex-wrap: flex-grow: flex-shrink: flex-basis: flex-flow: ; */
 
 
 
@@ -19,7 +19,7 @@ g
     width: 180px;
     height : 180px;
     background-color: blue;
-    flex-direction: row;
+    /* flex-direction: row; */
     
     border: 2px solid yellow;
     

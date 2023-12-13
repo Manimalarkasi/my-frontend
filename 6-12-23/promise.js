@@ -1,30 +1,22 @@
-import * as c from './async.js'
-let car1=new c()
-car1.drive()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 console.log("promise");
-// function tatkalBook(){
 
-// }
+function tossCoin(){
+    return new Promise((resolve,reject)=>{
+        //0-head(success) 1 -tail(failure)
+        const rand = Math.floor(Math.random()*2)
+        if(rand==0)
+            resolve()
+        else
+            reject()
+    })
+  }
+  
+  tossCoin()
+  .then(()=>console.log("Congrats!Its head!You won"))
+  .catch(()=>console.log("Sorry!You lost!Its"))
 //Promise(executor: (resolve: (value: any) => void, reject: (reason?: any) => void) => void): Promise<any>
+//then(onfulfilled?: ((value: any) => any) | null | undefined, onrejected?: ((reason: any) => PromiseLike<never>) | null | undefined): Promise<any>
 let tatkalBook=new Promise((resolve,reject)=>{
     let bookingSuccess=false
     if(bookingSuccess)
@@ -39,24 +31,10 @@ tatkalBook.then((amt)=>console.log(`thanks for bookking transfer Rs:${amt}`))
 
 console.log("promise la 2 call back() irukku 1.resolve(true) 2.reject(false)");
 console.log("ithukku code->success na resolve na obj.then()method ,failure na reject na .catch()method la arrow func use pannanum");
-console.log("resolve na then() func , reject na catch func");
+console.log("resolve na then() func , reject na catch() func");
 console.log("the promise object represent the enentual completion (or failure of an asynchronous operation)");
 
-// function tosscoin(){
-//     return new Promise((resolve,reject)=>{
-//     //1-head 0 tail
-//     let rand=Math.floor(Math.random()*2)
-//     if(rand==0)
-//     resolve()
-//     else
-//     reject()
-// })
-// }
-
-// tosscoin().then(()=>console.log("congrats"))
-// .catch(()=>console.log("sorry you lost"))
-
-//console.log("then kulla innoru promise() kodukka mudiyum ,athukk pathila func's um use pannalam athu correct ah irukkathu atha func hell un solluvanga");
+console.log("then kulla innoru promise() kodukka mudiyum ,athukk pathila func's um use pannalam athu correct ah irukkathu atha func hell un solluvanga");
 
 
 let reach1=new Promise((resolve,reject)=>{
@@ -66,6 +44,9 @@ let reach1=new Promise((resolve,reject)=>{
     else
      reject("i'm not reached")
 })
+reach1.then((message)=>console.log(message))
+.catch((message)=>console.log(message))
+
 let reach2=new Promise((resolve,reject)=>{
     let reached=1
     if(reached)
@@ -73,6 +54,10 @@ let reach2=new Promise((resolve,reject)=>{
     else
      reject("i'm not reached")
 })
+// console.log(Promise.reach2);
+reach2.then((message)=>console.log(message))
+.catch((message)=>console.log(message))
+
 let reach3=new Promise((resolve,reject)=>{
     let reached=1
     if(reached)
@@ -80,6 +65,9 @@ let reach3=new Promise((resolve,reject)=>{
     else
      reject("i'm not reached")
 })
+reach3.then((message)=>console.log(message))
+.catch((message)=>console.log(message))
+
 let reach4=new Promise((resolve,reject)=>{
     let reached=1
     if(reached)
@@ -87,6 +75,9 @@ let reach4=new Promise((resolve,reject)=>{
     else
      reject("i'm not reached")
 })
+reach4.then((message)=>console.log(message))
+.catch((message)=>console.log(message))
+
 let reach5=new Promise((resolve,reject)=>{
     let reached=1
     if(reached)
@@ -94,6 +85,28 @@ let reach5=new Promise((resolve,reject)=>{
     else
      reject("i'm not reached")
 })
+reach5.then((message)=>console.log(message))
+.catch((message)=>console.log(message))
+
+
+//Promise.apply()//apply(thisArg: any, argArray?: any): any
+
+Promise.all([reach1,reach2,reach2])
+.then((message)=>console.log(message))
+.catch((message)=>console.log(message))
+
+//promise - pending,resolved,rejected (settled)
+Promise.allSettled([reach2,reach2,reach3])
+.then((message)=>console.log(message))
+.catch((message)=>console.log(message))
+
+Promise.any([reach2,reach3,reach1])
+.then((message)=>console.log(message))
+.catch((message)=>console.log(message))
+
+Promise.race([reach1,reach2,reach3])
+.then((message)=>console.log(message))
+.catch((message)=>console.log(message))
 //all(values: readonly unknown[] | []): Promise<[] | unknown[]>
 //PromiseConstructor.all<T>(values: Iterable<T | PromiseLike<T>>): Promise<Awaited<T>[]>
 //PromiseConstructor.all<T extends readonly unknown[] | []>(values: T): Promise<{ -readonly [P in keyof T]: Awaited<T[P]>; }>
@@ -104,6 +117,23 @@ let reach5=new Promise((resolve,reject)=>{
 // Promise.allSettled([reach1,reach2])
 // .then((msg)=>console.log(msg))
 // .catch((msg)=>console.log(msg))
+
+const promise1 = Promise.reject(3);
+const promise2 = 42;
+const promise3 = new Promise((resolve, reject) => {
+  setTimeout(resolve, 100, 'foo');
+});
+
+Promise.all([promise1, promise2, promise3]).then((values) => {
+  console.log(values)}).catch((values) => {
+  console.log(values);
+});
+
+
+
+
+
+
 
 console.log("async - always return a promise");
 console.log("async awiat");

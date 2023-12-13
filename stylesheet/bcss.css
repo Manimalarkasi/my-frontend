@@ -46,6 +46,10 @@
        color:brown;
   }
   #second::first-letter{
-       color: crimson;
+       color: rgb(20, 147, 220);
        font-size: xx-large;
   }
+  p::first-letter{
+     color: rgb(20, 147, 220);
+     font-size: xx-large;
+}

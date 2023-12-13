@@ -267,7 +267,7 @@ console.table(["Audi", "Volvo", "Ford"]);
 
 function tatkalBook(){
   return new Promise((resolve,reject) => {
-      let bookingSuccess = false
+      let bookingSuccess = 0
       if (bookingSuccess)
           resolve(850)
       else   
@@ -275,8 +275,8 @@ function tatkalBook(){
   })
 }
 
-// tatkalBook().then((amt)=>console.log(`Thanks buddy! I have trasferred Rs.${amt}`))
-// .catch(()=>console.log("Thanks for trying! I will book a bus"))
+tatkalBook().then((amt)=>console.log(`Thanks buddy! I have trasferred Rs.${amt}`))
+.catch(()=>console.log("Thanks for trying! I will book a bus"))
 
 
 function tossCoin(){
@@ -290,9 +290,9 @@ function tossCoin(){
   })
 }
 
-// tossCoin()
-// .then(()=>console.log("Congrats!Its head!You won"))
-// .catch(()=>console.log("Sorry!You lost!Its"))
+tossCoin()
+.then(()=>console.log("Congrats!Its head!You won"))
+.catch(()=>console.log("Sorry!You lost!Its"))
 
 
 let reachA = new Promise((resolve,reject)=>{
