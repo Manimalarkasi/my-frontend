@@ -2,7 +2,7 @@ console.log(window);
 window.alert("hii")
 //window.conform("mani")
 
-console.log("windo.object.");
+console.log("window.object.");
 
 window.moveTo(500,100)
 window.resizeTo(1000,500)

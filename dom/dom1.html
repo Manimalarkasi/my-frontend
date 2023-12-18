@@ -3,15 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>🧨Document</title>
     <style>
         h1{
             background: violet;
         }
-        #img{
+        #ben{
             border: 4px solid brown;
             width: fit-content;
 
+        }
+        #img{
+            display:inline;
+            justify-content: space-between;
+        }
+        #name,#nbt{
+            display:flex;
         }
 
     </style>
@@ -24,14 +31,19 @@
     </script> -->
 </head>
 <body>
-    <h1>document object model</h1>
+    <h1  id="ta">document object model</h1>
     <div id="img">
-        <img src="../image/ben2.jfif">
+        <img id="ben"   src="../image/ben2.jfif" alt="ben">
+        <p>hii</p>
+        <input type="text" name="name" id="name" placeholder="mani">
+<button id="nbt">save</button>
     </div>
 
     <p id="doc"></p>
 <p id="full"></p>
-    <script src="dom1.js"></script>
+<h1 id="ipn"></h1>
+
+    <script src="dom1.js" ></script>
     <!-- event lisner html document ellem parse aana apem excute aagum -->
 </body>
 </html>
