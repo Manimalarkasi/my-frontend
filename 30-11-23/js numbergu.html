@@ -55,10 +55,11 @@ value:
     }
 
     // Call the startGame function when the page loads
-    startGame();
+    // startGame();
     function convert(){
     let temp=document.getElementById("heat").value;
     let unit=document.getElementById("type").value;
+    let tem=prompt("enter the temp")
     let result;
     if (unit === "celsius") {
       result = (temp * 9/5) + 32;
